@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_home"
+            android:title="HOME"
+            android:icon="@drawable/house" />
+
+        <item android:id="@+id/nav_notification_setting"
+            android:title="NOTIFICATION SETTINGS"
+            android:icon="@drawable/setting"/>
+
+        <item android:id="@+id/nav_logout"
+            android:title="LOGOUT"
+            android:icon="@drawable/logoutd"/>
+
+    </group>
+
+
+    <item
+        android:title="SHARE/RATE US">
+
+        <menu>
+
+            <group
+                android:checkableBehavior="none">
+
+                <item android:id="@+id/nav_share"
+                    android:title="SHARE"
+                    android:icon="@drawable/share"/>
+
+                <item android:id="@+id/nav_rateus"
+                    android:title="RATE US"
+                    android:icon="@drawable/rate"/>
+
+
+
+
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

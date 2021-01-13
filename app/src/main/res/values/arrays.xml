@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="id_activityScreenTitles">
+
+        <item></item>
+        <item>Notification Settings</item>
+        <item>Rate Us</item>
+        <item/>
+        <item>LogOut</item>
+
+
+    </string-array>
+
+    <array name="id_activityScreenIcons">
+
+        <item>@drawable/setting</item>
+        <item>@drawable/rate</item>
+        <item>0</item>
+        <item>@drawable/logoutd</item>
+    </array>
+    
+</resources>

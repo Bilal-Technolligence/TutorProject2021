@@ -1,0 +1,177 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstitutesLogIn.InstituteRegistration"
+    android:background="#ffff">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="tloginbtn">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cancel"
+            android:padding="5dp"
+            android:id="@+id/crossopt"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:id="@+id/insimage"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:src="@drawable/school"
+            android:transitionName="tins"/>
+
+        <TextView
+            android:id="@+id/logIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LogIn"
+            android:textAllCaps="true"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#000032"
+            android:transitionName="tinst"/>
+
+        <TextView
+            android:id="@+id/logIntext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to view and edit profile"
+            android:textSize="18sp"
+            android:textColor="@color/grey"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:hint="Email"
+                app:boxStrokeColor="#000032"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/appblue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:hint="Password"
+                app:boxStrokeColor="#000032"
+                app:passwordToggleEnabled="true"
+                android:layout_below="@+id/username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:background="#00000000"
+                android:elevation="0dp"
+                android:textSize="10dp"
+                android:text="Forgot Password?"
+                android:textColor="#0963DC"
+                android:id="@+id/forgotpass"
+                android:transitionName="transition_forgot_btn"
+                android:textAlignment="textEnd"
+                android:layout_below="@+id/password"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LogIn"
+                android:id="@+id/login"
+                android:background="#000032"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/forgotpass"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_margin="15dp"
+                android:id="@+id/newuser"
+                android:layout_below="@+id/login"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="NEW USER?"
+                    android:textSize="14dp"
+                    android:elevation="0dp"
+                    android:textColor="#000032" />
+
+                <TextView
+                    android:id="@+id/lregister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:layout_marginLeft="72dp"
+                    android:elevation="0dp"
+                    android:text="  REGISTER"
+                    android:textColor="#d89c13"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:transitionName="tregister" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pgb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/blue_circle"
+                android:elevation="8dp"
+                android:visibility="invisible">
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/ProgressBar"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

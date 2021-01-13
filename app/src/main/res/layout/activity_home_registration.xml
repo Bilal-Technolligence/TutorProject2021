@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeSignInUp.HomeRegistration"
+    android:orientation="vertical"
+    android:background="#ffff"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/cancel"
+        android:padding="5dp"
+        android:id="@+id/crossopt"
+        android:layout_gravity="right"/>
+
+    <ImageView
+        android:id="@+id/insimage"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/homepage"
+        android:transitionName="thome"/>
+
+    <TextView
+        android:id="@+id/logIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:textAllCaps="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#000032"
+        android:transitionName="thomet"/>
+
+    <TextView
+        android:id="@+id/logIntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to go to home page"
+        android:textSize="18sp"
+        android:textColor="@color/grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="Email"
+            app:boxStrokeColor="#000032"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/appblue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="Password"
+            app:boxStrokeColor="#000032"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:id="@+id/forgotpass"
+            android:transitionName="transition_forgot_btn"
+            android:elevation="0dp"
+            android:textSize="10dp"
+            android:text="Forgot Password?"
+            android:textColor="#0963DC"
+            android:textAlignment="textEnd"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LogIn"
+            android:id="@+id/login"
+            android:background="#000032"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_margin="15dp"
+            android:id="@+id/newuser"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="NEW USER?"
+                android:textSize="14dp"
+                android:elevation="0dp"
+                android:textColor="#000032" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="  SIGNUP"
+                android:id="@+id/homeregister"
+                android:transitionName="thomeregister"
+                android:textSize="14dp"
+                android:elevation="0dp"
+                android:textStyle="bold"
+                android:textColor="#d89c13" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#fff">
+
+    <item
+        android:id="@+id/insnav"
+        android:title="INSTITUTES"
+        android:icon="@drawable/schoolnav"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        app:cnb_backgroundColor="#d89c13"/>
+
+    <item
+        android:id="@+id/teanav"
+        android:title="TEACHERS"
+        android:icon="@drawable/teachnav"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        app:cnb_backgroundColor="#d89c13"/>
+
+    <item
+        android:id="@+id/stunav"
+        android:title="STUDENTS' REQUESTS"
+        android:icon="@drawable/readingnav"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        app:cnb_backgroundColor="#d89c13"/>
+    <item
+        android:id="@+id/exVaccancies"
+        android:title="Vaccancies"
+        android:icon="@drawable/readingnav"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        app:cnb_backgroundColor="#d89c13"/>
+</menu>

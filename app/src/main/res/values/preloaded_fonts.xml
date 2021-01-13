@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/antic</item>
+        <item>@font/atma</item>
+        <item>@font/atma_medium</item>
+        <item>@font/kalam_light</item>
+        <item>@font/kaushan_script</item>
+        <item>@font/muli</item>
+        <item>@font/muli_black</item>
+    </array>
+</resources>
